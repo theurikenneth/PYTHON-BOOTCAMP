@@ -1,0 +1,66 @@
+SQL - Structured Query Language
+SQL is a standard language for accessing and manipulating (storing, manipulating and retrieving data stored in a relational database) databases.
+It is designed for the retrieval and management of data in a relational database.
+All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their standard databse language.
+NB: Most of the SQL database programs also have their own proprietary extensions in addition to the SQL standard.
+
+Every table is broken up into smaller entities called fields. 
+The fields in the Customers table consist of CustomerID, CustomerName, ContactName, Address, City, PostalCode and Country. 
+A field is a column in a table that is designed to maintain specific information about every record in the table.
+A record, also called a row, is each individual entry that exists in a table. 
+For example, there are 91 records in the above Customers table. A record is a horizontal entity in a table.
+A column is a vertical entity in a table that contains all information associated with a specific field in a table.
+
+SQL Execution
+Using SELECT
+SELECT * FROM Customers - Prints all details of Customers
+
+SELECT CustomerName, ContactName, Address, City FROM Customers = Prints just four columns
+
+SELECT CustomerID, CustomerName, ContactName, Address, City 
+FROM Customers
+WHERE CustomerID = 1
+# Prints the first customer and prints 5 columns including the customer ID 1.
+
+CREATE TABLES
+The CREATE TABLE statement allows one to create a new table in a database.
+E.g.
+CREATE TABLE [IF NOT EXISTS] table_name(
+   column_1_definition,
+   column_2_definition,
+   ...,
+   table_constraints
+);
+
+CREATE TABLE departments(
+    id int,
+    department_name varchar(30)
+);
+
+DROP TABLES
+Allows the database to drop an existing table
+E.g.
+DROP TABLE table_name;
+
+DROP TABLE departments;
+
+SQL ALTER TABLE
+* Create Table
+CREATE TABLE departments(
+    id int,
+    department_nam varchar(30)
+);
+* Alter the Table - Add column
+ALTER TABLE table_name
+ADD column_name datatype;
+
+ALTER TABLE departments
+ADD column department_head varchar(30);
+
+* Alter the Table - Modify column
+ALTER TABLE departments
+ALTER Column DateOfBirth year;
+
+*Alter Table - Drop Column
+ALTER TABLE departments 
+DROP Column department_head;

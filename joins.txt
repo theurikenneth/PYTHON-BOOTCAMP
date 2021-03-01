@@ -1,0 +1,18 @@
+
+inner - common (inner join)
+outer - what one offers, what all of you offer (left,right,full outer join)
+self join - employees supervisors
+
+E.g. Relationship between Customer and Order
+SELECT * FROM Customers as c
+join Orders as o
+ON c.CustomerID = o.CustomerID;
+
+SELECT CustomerName.orderDate FROM Customers as c
+join Orders as o
+ON c.CustomerID = o.CustomerID;
+
+Relationship between Customer, Order and Order Details
+SELECT * FROM Customers as c
+join Orders as o ON c.CustomerID = o.CustomerID
+join OrderDetails as ord on o.OrderID = ord.OrderID;

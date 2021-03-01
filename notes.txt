@@ -1,0 +1,19 @@
+1. HOW TO USE SELF-JOIN TO JOIN EMPLOYEES AND MANAGERS
+    Employees 		
+    id 			
+    name 
+    department		
+    created_at
+    manager_id 
+
+    constraint manager_fk foreign key(manager_id) REFERENCES employees(id)
+
+2. OUTER-JOIN
+    TYPES OF OUTER JOINS
+    a) Left outer JOIN
+    b) Right outer JOIN
+    c) Full outer JOIN
+
+    
+
+

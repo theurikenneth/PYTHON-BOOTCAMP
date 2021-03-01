@@ -1,0 +1,10 @@
+Relational Database Management System (RDMS)
+RDBMS - is a DBMS designed specifically for relational databases. Therefore, RDBMSes are a subset of DBMSes
+        - A relational database refers to a database that stores data in a structured format, using rows and columns
+        - While a relational database describe the type pf database an RDMBS manages, the RDBMS refers to the database program itself.
+        - it is the software that executes queries on the data, including, adding, updating and serahcing for values.
+        - An RDBMS may provide a visual representation of the data.
+E.g. Postgres, Oracle Database, MySQL, Microsoft SQL Server, IBM DB2
+
+Difference between DBMS and RDBMS - RDBMS applications store data in a tabular form while DBMS applications store data as files.
+DBMS can have tables although there exists "no" relationship between the tables.
